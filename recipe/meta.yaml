@@ -34,7 +34,7 @@ test:
   commands:
     - pip check
     - jupyter labextension list
-    - jupyter labextension list 2>&1 | python -c "import re, sys; v = sys.stdin.read(); assert re.search(r'ipylab.*enabled.*OK', v, re.MULTILINE)"
+    - jupyter labextension list 2>&1 | python -c "import re, sys; v = sys.stdin.read(); assert re.search(r'ipylab.*enabled.*ok', v, re.MULTILINE | re.IGNORECASE)"
 
 about:
   home: https://github.com/jtpio/ipylab
