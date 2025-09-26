@@ -34,7 +34,7 @@ test:
   commands:
     - pip check
     - jupyter labextension list
-    - jupyter labextension list 2>&1 | python -c "import re, sys; v = sys.stdin.read(); assert re.findall(r'ipylab.*OK.*ipylab', v)"
+    - jupyter labextension list 2>&1 | python -c "import re, sys; v = sys.stdin.read(); assert re.findall(r'ipylab.*ok.*ipylab', v)"
 
 about:
   home: https://github.com/jtpio/ipylab
